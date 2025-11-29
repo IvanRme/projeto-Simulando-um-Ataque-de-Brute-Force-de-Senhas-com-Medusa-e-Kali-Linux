@@ -93,9 +93,76 @@
 <img align="center"  
     src="./imagens/servi�oseversoes.png"
     >
-## Preparando o Ataque 
+##  Preparando o Ataque 
    Criação das WordLists
 
   <p align ="center">  1-Possiveis senhas e usuarios :</p> <br>
   <img  src="./imagens/senhaseusuarios.png"
     >
+
+  ## Vulnerabilidade 01 - Brute Force no serviço FTP
+  *I -* Fazendo o uso da medusa para descobrir a possivel senha e usuário, nesse caso , usamos dois arquivos TXT. 
+<img align="center"  
+    src="<img align="center"  
+    src="./imagens/medusa-descobrindo-senha-com-arquivo.png"
+    > </br>
+    **II-** Após rodar a linha de comando, onde está a seta vermelha , demonstra o usuário e senha achado naquele serviço FTP <br>
+    **II.I-** A Descoberta chegou a o usuario :
+       - msfadmin <br>
+     **II.II- ** A descoberta chegou a senha :
+       - msfadmin
+
+  *III-* Validando o acesso ao serviço FTP 
+  <img align="center"  
+    src="./imagens/acessando o servico ftp.png"
+    >
+
+  *IV -* Exfiltração <br>
+  <p>Caso tivesse algum arquivo dentro ,o atacante poderia gravar esses dados e ficar pra ele ,para isso ele teria que fazer um comando do tipo  **get dado_a_ser_pego.txt** </p>
+
+### 2 Brute Force no servidor Web
+**Descrição:** 
+**I -** Analisando a Resquest do método POST e o retorno do login.
+<img align="center"  
+    src="./imagens/escopo_formulario.png"
+    >
+
+**II -** Realizando ataque novamente com a medusa e as word lists e analisando o resultado.
+<img align="center"  
+    src="./imagens/brute force http.png">
+### Resultado 
+  Podemos observar que o primeiro Sucesso foi dado com o valor do usuário igual a (admin) e a senha (password)
+   
+
+**III -** Validando o resultado do teste.
+<img align="center"  
+    src="./imagens/validando acesso a http.png">
+
+### V‑03 Brute Force no serviço de rede SMB
+**Descrição:** 
+**I -** Realizando a enumeração dos possíveis usuários.
+<img align="center"  
+    src="./imagens/enum4linux para enumerar todas as possiveis vulneraveis.png"
+    >
+ **I.I -** Lista de Usuários no sistema 
+<img align="center"  
+    src="./imagens/usuarios-enum4linux.png"
+    >
+
+**II -** Criando uma nova word list com base na análise do resultado do Enum4linux.
+
+- Lista de Usuarios:
+
+<img align="center"  
+    src="./imagens/usuariosSMB.png"
+    >
+
+- Lista de Senhas:
+
+<img align="center"  
+    src="./imagens/senhaSMB.png"
+    >
+
+
+  
+  
