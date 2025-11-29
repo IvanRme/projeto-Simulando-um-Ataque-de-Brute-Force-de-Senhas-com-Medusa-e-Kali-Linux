@@ -41,7 +41,7 @@
 **Título:** Relatório de Exploração de Vulnerabilidade  
 **Projeto/Sistema:** Metasploitable 2 e DVWA  
 **Cliente:** DIO  
-**Responsáveis:** Ivan Rodrigues 
+**Responsáveis:** Ivan Rodrigues </br>
 **Versão:** v1.0
 
 ##  2. Escopo e Regras de Engajamento
