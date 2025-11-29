@@ -75,20 +75,27 @@
   ## 📊 6. Resumo das Vulnerabilidades
 | ID | Porta | Serviço| Vulnerabilidade | Severidade | Status | Observações | Versão|
 |----|-------|--------|-----------------|------------|--------|-------------|-------|
-| V‑001 | 21 | FTP | Brute Force | Crítica | Confirmada | Exposição de dados |2.3.4|
-V‑002 | 80 | HTTP | Brute Force | Crítica | Confirmada | Exposição de dados | apache httpd 2.2.8 ((ubuntu) DAV/2)
-V‑003 | 445 | SMB | Brute Force e Password Spraying | Crítica | Confirmada | Exposição de dados | SMBv1|
+| 01 | 21 | FTP | Brute Force | Crítica | Confirmada | Exposição de dados |2.3.4|
+02 | 80 | HTTP | Brute Force | Crítica | Confirmada | Exposição de dados | apache httpd 2.2.8 ((ubuntu) DAV/2)
+03 | 445 | SMB | Brute Force e Password Spraying | Crítica | Confirmada | Exposição de dados | SMBv1|
 
 🕵️ 7. Vulnerabilidades detalhadas
 ### Exploração
 **Coleta de informações relevantes:** 
 
-**I -** Varredura da Rede com objetivo de descobrir o IP do host alvo.
+**I -** Varredura da Rede com objetivo de descobrir ips que estão ativo nela.
 <img align="center"  
-    src="./images/Captura de tela 2025-11-10 003823.png"
+    src="./imagens/hostativos.png"
     >
+  <p>Nesse caso ,temos 3 hosts ativos, 100,101 e 102  </p>
 
 **II -** Scaneando os serviços abertos no host alvo.
 <img align="center"  
-    src="./images/Captura de tela 2025-11-10 004110.png"
+    src="./imagens/servi�oseversoes.png"
+    >
+## Preparando o Ataque 
+   Criação das WordLists
+
+  <p align ="center">  1-Possiveis senhas e usuarios :</p> <br>
+  <img  src="./imagens/senhaseusuarios.png"
     >
