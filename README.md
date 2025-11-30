@@ -216,7 +216,7 @@
  - Uso de firewall e IPS (SIstema de prevenção de intrusão)
  - Bloqueio de N tentativas de login , podendo bloquear por tempo
 
-#Recomendações de imediato 
+# Recomendações de imediato 
 - Atualizações de pacthes
 - Verificar credenciais dos usuarios
 - Ativar logs de atividades suspeitas
